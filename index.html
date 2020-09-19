@@ -4,19 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mon site</title>
+    <meta name="description" content="c'est mon premier site">
+    <meta name="og:image" content="https://adandedjanbrunelle.natlifyapp.com/">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_carte.css">
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 </head>
 
 <body>
-        <header>Acceuil</header>
+      <section id="contoure">
     <h1>ADANDEDJAN Brunelle</h1>
-        <img src="naruto.png" class="center" alt="ok">
+        <img src="Snapchat-249694277.jpg" class="center" alt="ok">
+        <p class="anime">Bonjour je suis ADANDEDJAN Brunelle </p>
     <p class="paragrape2">Etudiante en fin de formation en télécommunication et réseaux informatique. 
         Fans la dance la bouffe,les mangas et la programmation.Forte personalité; un peu brutale et 
         aime les forte sensation.Toujours à la recherche de la perfection et du meilleur dans mon évolution</p>
+    </section>
        
-        <div class="bouton"><a href="Folio.html">Mon porte Folio</a></div>
+        <p id="vide">  </p>
+        <section id="contoure">
+        <h1 class="Soulingner">Découvrire mes mangas préféré</h1>
+        <div>
+            <img src="naruto.png" alt="photos">
+            <img src="black_clover.jpg" alt="photos">
+            <img src="hunter.jpg" alt="photos">
+        </div>
+        <div>
+            <img src="yu_gi_ho.jpg" alt="photos">
+            <img src="fumll_metal.jpg" alt="photos">
+            <img src="sugo_shara.jpg" alt="photos" id="particulier">
+        </div>
+        <div>
+            <img src="dragon_ball.jpg" alt="photos">
+            <img src="one_piece.jpg" alt="photos" id="particulier">
+            <img src="wakfu.jpg" alt="photos" id="particulier">
+        </div>
+    </section>
+        
+        <p id="vide">  </p>
+        <section id="contoure">
+
+        <p id="heur">L'heur de cotonou et dans tous le pays est:</p>
+
+        <h1 id="heure"></h1>
+    <script>
+        var day = new Date();
+        var hours =day.getHours();
+        var minutes = day.getMinutes();
+        var seconds =day.getSeconds();
+        var heure_a_afficher = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("heure").innerHTML = heure_a_afficher;
+      
+        function refresh(){
+             var t = 1000; // rafraîchissement en millisecondes
+             setTimeout('heure_a_afficher()',t)
+         }
+        
+    </script>
+    </section id="contoure">
+
+     <p id="vide">  </p>
+     <section>
+
+<h1>Formulaire</h1>
+<form data-netlify="true" name="form" method="POST" class="milieu">
+    <div>
+        <label for="name">Nom</label><br>
+       <input type="texte" id="name" name="nom">
+   
+
+    <div>
+        <label for="cv">Message:</label><br>
+        <textarea name="comments" rows="5" cols="40">Message ici...</textarea>
+    </div>
+   
+</div>
+   
+        <input type="submit" value="Envoyer" class="bouton">
+    
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</section>
+<script>
+    mediumZoom('img');
+</script>
 </body>
+
 
 </html>
